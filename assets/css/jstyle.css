@@ -1,0 +1,182 @@
+:root{
+  --main-text-color: forestgreen;
+  --highlight-color: rgb(79, 255, 56);
+  --button-color: rgb(0, 140, 255);
+  --main-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.main {
+    padding-top: 100px;
+    margin: auto;
+    width: 700px;
+    text-align: center;
+}
+
+.bigger-text{
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.custom-center{
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.finish-section {
+    margin: 0 auto;
+    width: 900px;
+    visibility: hidden;
+}
+  
+.HS-page {
+
+    margin: 0 auto;
+    width: 900px;
+    visibility: hidden;
+}
+ 
+  
+.all_btn {
+    background: var(--button-color);
+    padding: 5px;
+    margin: 5px;
+    width: 40%;
+    border: 1px solid cornsilk;
+    border-radius: 5px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    box-shadow: 1px 10px 5px black;
+}
+
+.all_btn:hover{
+  background: var(--highlight-color);
+  color: black;
+  font-weight: bold;
+}
+
+.custom-button{
+  background-color: var(--main-text-color);
+}
+
+.custom-button:hover{
+  background-color: greenyellow;
+  color: black;
+
+}
+
+ul{
+  list-style: none;
+  
+}
+
+#response{
+  font-size: 30px;
+  font-weight: bold;
+  align-content: center;
+}
+
+.notice{
+  color: red;
+  font-weight: bold;
+}
+
+.quizContainer{
+  padding-top: 100px;
+  align-items: center;
+  text-align: center;
+}
+  
+.myBtn{
+    background: var(--button-color);
+    padding: 0px;
+    margin: 5px;
+    border: 1px solid cornsilk;
+    border-radius: 5px;
+    color: white;
+    font-size: 5px;
+}
+
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  align-items: center;
+  height: 60px;
+  align-items: center;
+  border-radius: 0px 0px 5px 5px;
+  padding-bottom: 5px;
+  box-shadow: 1px 1px 8px grey;
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  margin-top: 125px;
+  width: 100%;
+  justify-content: center;
+  color: var(--main-text-color);
+  text-shadow: 0 0 1px var(--highlight-color);
+  font-family: var(--main-font);
+  background-color: black;
+  bottom: 0;
+  position: absolute;
+  height: 50px;
+  align-items: center;
+  border-radius: 5px 5px 0px 0px;
+}
+
+@media only screen
+and(min-width: 320px)
+and(max-width: 540px) {
+  
+     .all_btn{
+        background: darkmagenta;
+        padding: 10px;
+        margin: 20px;
+        width: 100%;
+        border: 1px solid cornsilk;
+        border-radius: 5px;
+        color: white;
+        font-size: 5px;
+        text-align: center;
+
+
+
+    }
+     .main {
+        margin: 0px;
+        text-align: justify;
+        word-wrap: break-word;
+        width: 100%;
+    }
+
+    h2 {
+        text-align: left;
+    }
+  
+     .finish-section {
+        margin: 0px;
+        width: 100%;
+        visibility: hidden;
+    }
+     
+     .HS-page {
+
+        margin: 0px;
+        width: 100%;
+        visibility: hidden;
+    }
+}
