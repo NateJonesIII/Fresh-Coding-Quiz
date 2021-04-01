@@ -11,14 +11,11 @@ var errMsg = document.querySelector("#errorSmg");
 var initialInput = document.querySelector("#inputInitial").value;
 var submitEl = document.querySelector(".btn btn-primary mb-2");
 var responsDiv = document.querySelector("#response");
-var finaPageEl = document.querySelector(".final-page");
+var hsPage = document.querySelector(".HS-page");
 var initialAndScore = document.querySelector("#staticEmail");
 var firstPageEl = document.querySelector(".first-page");
-var timer = 100;
+var timer = 65;
 var timeCount;
-
-
-
 
 // Create an  array of questions
 var questions = [
@@ -188,8 +185,7 @@ function renderLastItem() {
         return
     }
     finishDiv.textContent = "";
-    var finaPageEl = document.querySelector(".final-page");
-    finaPageEl.style.visibility = "visible";
+    hsPage.style.visibility = "visible";
     var initialAndScore = document.querySelector("#staticEmail");
     initialAndScore.value = yourInitial + ":" + " " + yourScore;
 }
